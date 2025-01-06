@@ -1,0 +1,135 @@
+/* Style principal pour la section Home */
+.home {
+    position: relative;
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    width: 100%;
+    background-image: url('./homeimg.jpg'); /* Remplacez par le chemin de votre image */
+    background-position: center center; /* Centre l'image */
+    background-size: cover; /* L'image couvre toute la largeur et hauteur */
+    background-attachment: fixed; /* L'image reste fixe lorsque l'utilisateur fait défiler */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(219, 14, 14);
+    overflow-x: hidden; /* Empêche tout débordement horizontal */
+}
+
+/* Masque pour une transition douce vers le contenu */
+.home__image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: -1;
+    margin-bottom: -150px;
+    display: none; /* L'image est masquée car elle est déjà définie en arrière-plan */
+}
+
+/* Ligne contenant les produits */
+.home__row {
+    display: flex;
+    flex-wrap: nowrap; /* Les produits restent alignés sur une seule ligne */
+    gap: 20px; /* Espacement entre les produits */
+    padding: 10px;
+    overflow-x: auto; /* Permet un défilement horizontal si nécessaire */
+    scrollbar-width: thin; /* Barre de défilement fine pour les navigateurs compatibles */
+}
+
+.home__row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.home__row::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.home__row::-webkit-scrollbar-track {
+    background: #810202;
+}
+
+/* Style pour chaque produit */
+.product {
+    position: relative;
+    z-index: 1; /* Place le produit au-dessus de l'image */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Effet au survol des produits */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du titre du produit */
+.product__title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Style du prix du produit */
+.product__price {
+    font-size: 1.2rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+/* Évaluation du produit */
+.product__rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.product__rating span {
+    font-size: 1rem;
+    color: #ff9800;
+}
+
+/* Style de l'image du produit */
+.product__image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transition fluide */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre initiale subtile */
+}
+
+.product__image:hover {
+    transform: scale(1.1); /* Zoom fluide au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus forte au survol */
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Pleine hauteur de l'écran */
+    margin-bottom: 20px; /* Espacement entre chaque image */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garde les proportions de l'image */
+    z-index: -1; /* Place l'image en arrière-plan */
+}
+

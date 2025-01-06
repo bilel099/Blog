@@ -1,0 +1,102 @@
+/* Conteneur principal */
+.navLeftFooter {
+    background-color: #232f3e; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.navFooterBackToTop {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.NavFooterBackToTopText {
+    font-size: 14px;
+    color: #00a8e1;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.NavFooterBackToTopText:hover {
+    color: #ff9900; /* Couleur au survol */
+}
+
+/* Section verticale */
+.navFooterVerticalColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Titres des sections */
+.navFotterColhead,
+.navFotterNexthead {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Liste des éléments */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px 20px 0;
+}
+
+.nav_a,
+.nav_b {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.nav_a:hover,
+.nav_b:hover {
+    color: #ff9900; /* Couleur au survol */
+}
+
+/* Réseaux sociaux */
+.item.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #00a8e1; /* Couleur au survol */
+}
+
+/* Icônes spécifiques */
+.fab {
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.col-lg-3 item social{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+

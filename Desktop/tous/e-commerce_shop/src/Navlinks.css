@@ -1,0 +1,58 @@
+/* Styles généraux pour la navigation */
+.navlinks {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; /* Séparation des sections */
+    align-items: center;
+    color: white;
+}
+
+/* Liste principale de liens */
+.navlinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.navlinks li {
+    display: inline;
+}
+
+/* Liens de navigation principaux */
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.navlinks a:hover {
+    background-color: #555; /* Couleur de survol */
+    border-radius: 5px;
+}
+
+/* Section secondaire : navlinks__inner */
+.navlinks__inner {
+    display: flex;
+    gap: 15px; /* Espacement entre les liens */
+}
+
+.navlinks__inner a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem; /* Taille légèrement plus petite */
+}
+
+.navlinks__inner a:hover {
+    border-color: white; /* Bordure blanche au survol */
+    background-color: #555;
+}
